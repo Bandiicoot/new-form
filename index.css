@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+.body {
+  background-color: rgb(65, 21, 185);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+  /*background-image: url(./fondo-body.jpg);*/
+}
+.contenedor-principal {
+  /* background-image: url(./fondo-de-form.jpg);*/
+  background: linear-gradient(
+    45deg,
+    rgba(255, 88, 0, 0.5),
+    rgba(167, 0, 255, 0.085)
+  );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  gap: 10px;
+  height: 639px;
+  width: 566px;
+  box-shadow: 0px 0px 50px;
+  border-radius: 50px 20px;
+}
+.titulo {
+  margin-bottom: 0%;
+}
+.area-de-texto {
+  height: 30px;
+  width: 60%;
+  animation: leftIn 1.5s linear forwards;
+  animation-delay: calc(0.5s * var(--i));
+  background: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.123);
+  color: aliceblue;
+}
+
+.fechas {
+  height: 30px;
+  width: 60%;
+  animation: leftIn 1.9s linear forwards;
+  animation-delay: calc(0.5s * var(--i));
+  background: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.123);
+  color: antiquewhite;
+}
+.letras {
+  color: aliceblue;
+  font-family: "Roboto";
+}
+.opciones-gustos {
+  height: 30px;
+  width: 60%;
+  animation: leftIn 2.2s linear forwards;
+  animation-delay: calc(0.5s * var(--i));
+  background: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.123);
+  color: black;
+  font-weight: 790;
+  font-size: medium;
+}
+.preferencias {
+  margin-bottom: 0%;
+}
+.choices {
+  display: flex;
+  gap: 15px;
+}
+
+.dificultades {
+  margin-bottom: 0%;
+}
+.boton {
+  margin-top: 40px;
+  height: 60px;
+  width: 190px;
+  font-size: medium;
+  color: antiquewhite;
+  animation: topIn 2.3s linear forwards;
+  animation-delay: calc(0.5s * var(--i));
+  background: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.123);
+
+  transition: all.6s ease;
+}
+
+.boton:hover {
+  color: aliceblue;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 88, 0, 0.5),
+    rgba(167, 0, 255, 0.085)
+  );
+}
+
+@keyframes leftIn {
+  0% {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes topIn {
+  0% {
+    transform: translateY(-300%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}

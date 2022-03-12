@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="index.js"></script>
+  </head>
+  <body class="body">
+    <form class="contenedor-principal">
+      <label class="titulo , letras">Nombre</label>
+      <input name="Nombre" class="area-de-texto" type="text" required />
+      <input class="fechas" type="date" name="fecha" id="" />
+      <p class="2 titulo , letras">
+        De lo aprendido hasta ahora, ¿qué tema te gustó más?
+      </p>
+
+      <select class="opciones-gustos" name="fav" id="">
+        <option value="Clases">Clases</option>
+        <option value="Promesas">Promesas</option>
+        <option value="Funciones">Funciones</option>
+        <option value="Gambarrembo">Gambarrembo</option>
+      </select>
+
+      <p class="preferencias , letras">Preferis estudiar</p>
+      <div class="choices">
+        <div>
+          <input type="radio" name="horario-fav" id="De dia" value="De noche" />
+          <label for="De dia" class="letras">De dia</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="horario-fav"
+            id="De noche"
+            value="De noche"
+          />
+          <label for="De noche" class="letras">De noche</label>
+        </div>
+      </div>
+      <p class="dificultades , letras">
+        ¿Cuales fueron los temas más complejos hasta ahora?
+      </p>
+      <div>
+        <input
+          type="checkbox"
+          name="mas-jodidos"
+          id="Typescript"
+          value="Typescript"
+        />
+        <label for="Typescript" class="letras">Typescript</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          name="mas-jodidos"
+          id="Promesas"
+          value="Promesas"
+        />
+        <label for="Promesas" class="letras">Promesas</label>
+      </div>
+      <div>
+        <input type="checkbox" name="mas-jodidos" id="Clases" value="Clases" />
+        <label for="Clases" class="letras">Clases</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          name="mas-jodidos"
+          id="Funciones"
+          value="Funciones"
+        />
+        <label for="Funciones" class="letras">Funciones</label>
+      </div>
+      <button class="boton , letras">Enviar</button>
+    </form>
+  </body>
+</html>
